@@ -3,6 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        var doubleValue = 10_000_000.53;
     }
 }
