@@ -1,7 +1,7 @@
 package com.company;
 
-import com.company.model.ClothingItem;
 import com.company.model.ClothingSize;
+import com.company.model.Shirt;
 
 import java.text.NumberFormat;
 
@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var item = new ClothingItem(ClothingItem.SHIRT,
+        var item = new Shirt(
                 ClothingSize.L,
                 19.99,
                 3);
