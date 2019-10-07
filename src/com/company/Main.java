@@ -6,22 +6,31 @@ import com.company.model.Hat;
 import com.company.model.Shirt;
 
 import java.text.NumberFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        var shirt = new Shirt(
+        Map<String, ClothingItem> items = new HashMap<>();
+        items.put("shirt", new Shirt(
                 ClothingSize.L,
                 19.99,
-                3);
-        displayItemDetails(shirt);
-
-        var hat = new Hat(
+                3));
+        items.put("hat", new Hat(
                 ClothingSize.M,
                 29.99,
-                1);
-        displayItemDetails(hat);
+                1));
+
+//        var anItem = items.get("hat");
+//        displayItemDetails(anItem);
+//
+        var keys = items.keySet();
+        for (String key : keys) {
+            var item = items.get(key);
+            displayItemDetails(item);
+        }
     }
 
     private static void displayItemDetails(ClothingItem item) {
