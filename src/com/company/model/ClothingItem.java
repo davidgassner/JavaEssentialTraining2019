@@ -6,6 +6,16 @@ public class ClothingItem {
     private double price;
     private int quantity;
 
+//    public ClothingItem() {
+//    }
+
+    public ClothingItem(String type, String size, double price, int quantity) {
+        this.type = type;
+        this.size = size;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     public String getType() {
         return type;
     }
