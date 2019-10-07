@@ -1,4 +1,4 @@
-package com.company;
+package com.company.utilities;
 
 public class CalcHelper {
 

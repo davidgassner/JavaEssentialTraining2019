@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.utilities.CalcHelper;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
